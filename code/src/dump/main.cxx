@@ -15,13 +15,14 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc != 3)
+	if (argc != 3 && argc != 4)
 	{
 		if (argv[0])
 		{
 			std::cout << " Usage: " << argv[0];
 			std::cout << " <num_qubits> ";
 			std::cout << " <fpath>";
+			std::cout << " [-csv]";
 			std::cout << std::endl;
 		}
 		else
@@ -29,6 +30,7 @@ int main(int argc, char *argv[])
 			std::cout << " Usage: dump";
 			std::cout << " <num_qubits> ";
 			std::cout << " <fpath>";
+			std::cout << " [-csv]";
 			std::cout << std::endl;
 		}
 
@@ -46,6 +48,12 @@ int main(int argc, char *argv[])
 	reader.read();
 
 	reader.print();
+
+	if (argc == 4) 
+	{
+		reader.write_csv();
+		std::cout << "Fields written to input.csv, wavefx's to output.csv\n";
+	}
 
 	return 0;
 }

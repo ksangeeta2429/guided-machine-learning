@@ -26,6 +26,7 @@ class Reader
 
 		void read(void);
 		void print(void) const;
+		void write_csv(void) const;
 
 	private:
 		int num_qubits;

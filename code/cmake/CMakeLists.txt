@@ -5,7 +5,7 @@ project(phynet LANGUAGES CXX VERSION 1.0)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 
-#set(MPI_CXX_COMPILER /opt/intel/compilers_and_libraries_2019.5.281/linux/mpi/intel64/bin/mpiicpc)
+#set(MPI_CXX_COMPILER /opt/intel/oneapi/compiler/2021.1.1/linux/bin/intel64/mpiicpc)
 #set(MPI_CXX_HEADER_DIR /opt/intel/compilers_and_libraries_2019.5.281/linux/mpi/intel64/include)
 
 #set(MPI_C_COMPILER /opt/intel/compilers_and_libraries_2019.5.281/linux/mpi/intel64/bin/mpiicc)
