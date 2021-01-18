@@ -2,6 +2,11 @@ cmake_minimum_required(VERSION 3.16.0)
 
 project(phynet LANGUAGES CXX VERSION 1.0)
 
+list(APPEND CMAKE_MODULE_PATH
+    /home/ss2429/guided-machine-learning/code/cmake
+    ${CMAKE_MODULE_PATH}
+)
+
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 set(Boost_USE_MULTITHREADED FALSE)
